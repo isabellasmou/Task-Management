@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SIDE BAR -->
+    <aside class="sidebar">
+      <div id="leftside-navigation" class="nano">
+        <ul class="nano-content">
+          <li>
+            <a href="index.html">
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:void(0);">
+              <span>Conteúdos</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:void(0);">
+              <span>Hoje</span>
+            </a>
+          </li>
+          <li class="sub-menu-semanal">
+            <a href="javascript:void(0);">
+              <span>Semanal</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:void(0);">
+              <span>Mensal</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- SIDE BAR -->
+
+    <div class="dashboard">
+      <div class="dashboard-left">
+        <div class="left-header">
+          <h3>Crie uma tarefa</h3>
+        </div>
+        <div class="left-task">
+          <div class="task-info task-item">
+            <label for="" class="task-label">Tarefa</label>
+            <input
+              type="text"
+              class="task-info-input task-input"
+              placeholder="Estudar..."
+            />
+            <label for="" class="task-label">Tag</label>
+            <input
+              type="text"
+              class="task-input task-type-input"
+              placeholder="Saúde, Educação..."
+            />
+          </div>
+          <button class="task-add">Adicionar tarefa</button>
+        </div>
+      </div>
+      <div class="dashboard-right">
+        <div class="right-list">
+          <h3 class="right-list-h3"></h3>
+          <div class="list-flex">
+            <!-- 				<span class="list-item">
+					<span class="list-item-value">Finish Javascript course</span>
+					<span class="list-item-type">Learning</span>
+					<span class="list-item-remove">Remove</span>
+				</span> -->
+          </div>
+        </div>
+        <span class="verify">
+          <span class="verify-question">Apagar a tarefa?</span>
+          <span class="verify-btns">
+            <span class="verify-btn" data-delete="yes">Sim</span>
+            <span class="verify-btn" data-delete="No">Não</span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </body>
+  <script src="js.js"></script>
+</html>
